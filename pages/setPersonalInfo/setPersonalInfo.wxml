@@ -2,17 +2,17 @@
 <text>pages/setPersonalInfo/setPersonalInfo.wxml</text>
 <view>
   <form bindsubmit="submit">
-    <input type="text" class="pri-input" name="name" placeholder="姓名"/>
-    <input type="text" class="pri-input" name="class" placeholder="班级"/>
-    <input type="text" class="pri-input" name="tname" placeholder="辅导员姓名"/>
-    <input type="text" class="pri-input" name="tel" placeholder="手机号"/>
-    <input type="text" class="pri-input" name="address" placeholder="前往的地点"/>
-    <picker class="pri-input" header-text="选择开始日期" mode="date" name="beginDate">选择开始日期</picker>
-    <picker class="pri-input" header-text="选择开始时间" mode="time" name="beginTime">选择开始时间</picker>
-    <picker class="pri-input" mode="selector" range="{{days}}" name="beginDay">开始是周几</picker>
-    <picker class="pri-input" header-text="选择结束日期" mode="date" name="endDate">选择结束日期</picker>
-    <picker class="pri-input" header-text="选择结束时间" mode="time" name="endTime">选择结束时间</picker>
-    <picker class="pri-input" mode="selector" range="{{days}}" name="endDay">结束是周几</picker>
+    <input type="text" class="pri-input" name="name" placeholder="姓名" value="{{info.name}}"/>
+    <input type="text" class="pri-input" name="class" placeholder="班级" value="{{info.sclass}}"/>
+    <input type="text" class="pri-input" name="tname" placeholder="辅导员姓名" value="{{info.tname}}"/>
+    <input type="text" class="pri-input" name="tel" placeholder="手机号" value="{{info.tel}}"/>
+    <input type="text" class="pri-input" name="address" placeholder="前往的地点" value="{{info.address}}"/>
+    <picker class="pri-input" header-text="选择开始日期" mode="date" name="beginDate">{{dateInfo.beginDate}}</picker>
+    <picker class="pri-input" header-text="选择开始时间" mode="time" name="beginTime">{{dateInfo.beginTime}}</picker>
+    <picker class="pri-input" mode="selector" range="{{days}}" name="beginDay">{{dateInfo.beginDay}}</picker>
+    <picker class="pri-input" header-text="选择结束日期" mode="date" name="endDate">{{dateInfo.endDate}}</picker>
+    <picker class="pri-input" header-text="选择结束时间" mode="time" name="endTime">{{dateInfo.endTime}}</picker>
+    <picker class="pri-input" mode="selector" range="{{days}}" name="endDay">{{dateInfo.endDay}}</picker>
     <button form-type="submit">提交</button>
   </form>
 </view>
