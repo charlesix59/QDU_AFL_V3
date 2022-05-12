@@ -1,0 +1,8 @@
+/**index.wxss**/
+.cantiner{
+  margin: auto;
+  text-align: center;
+}
+.btn{
+  margin: 1rem 0;
+}

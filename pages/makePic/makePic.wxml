@@ -1,0 +1,85 @@
+<view style="background-color: #f6f6f6">
+  <view style="margin-left: 3%;margin-right: 3%;color: #606060;font-size: 14px;margin-top: 0.5rem;">
+  <view class="top">请假申请已被批准通过，请结束后完成销假</view>
+  <view style="position:absolute;text-align: center;float: left;width: 10%;">
+    <view style="color:#d6d6d6;font-size: 1rem">●</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.5em">|</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.5em">|</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.5em">|</view>
+    <view style="color:#d6d6d6;font-size: 1rem">●</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.55em">|</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.55em">|</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.55em">|</view>
+    <view style="color:#d6d6d6;font-size: 1rem;margin: -0.55em">|</view>
+    <view style="color:#46a1fa;font-size: 1rem">●</view>
+  </view>
+  <view class="list">
+    <text class="gray">学生\n</text>
+    <text>{{info.name}}</text> 申请请假
+    <text class="gray" style="position: absolute;right:3em"><text id="data1"></text>{{info.beginDate}} 7:21</text>
+    <view style="position: absolute;right: 5px;bottom:15px;float:right;">
+      <image src="../../img/right.png" style="width:18px;height:18px"></image>
+      <!-- <img src="right.png" width="18px"height="18px"> -->
+    </view>
+  </view>
+  <view class="list">
+    <text class="gray">辅导员\n</text>
+    <text id="teacher1">{{info.tname}}</text> 审批请假
+    <text class="gray" style="position: absolute;right:3em;"><text id="data2"></text>{{info.beginDate}} 7:43</text>
+    <view style="position: absolute;right: 5px;bottom:15px;float:right;">
+      <image src="../../img/right.png" style="width:18px;height:18px"></image>
+      <!-- <img src="right.png" width="18px"height="18px"> -->
+    </view>
+  </view>
+  <view class="list">
+    <text class="gray">学生\n</text>
+    <text id="name2">{{info.name}}</text> 销假申请
+  </view>
+  <view style="background-color:white;margin-bottom: 0.5em;margin-top: 1rem;padding: 0.5rem;">
+    <view class=".center">
+      <h4>请假申请</h4>
+    </view>
+    <text>\n尊敬的老师：</text>
+    <text>\n</text>
+    <text>\n</text>
+    <view class='main'>
+      <text style="color:#fff">aaaa</text>
+      本人
+      <text class="a">
+        <text id="class1">{{info.sclass}}</text>
+        <text id="name0">{{info.name}}</text>
+      </text>
+      因
+      <text class="a">前往校外去处理事务</text>
+      ，需请
+      <text class="a">事假</text>，从
+      <text class="a">
+        <text id="time1">{{info.beginDate}} {{info.beginTime}}（{{info.beginDay}}）</text>
+      </text> 
+      至
+      <text class="a">
+        <text id="time2">{{info.endDate}} {{info.endTime}}（{{info.endDay}}）</text>
+      </text> ，不能参加累计<text class="a">3</text>节课程的学习。
+    </view>
+    <view class="main">
+      <text style="color:#fff">aaaa</text>
+      请假期间，本人将去往<text class="a">校外</text>，详细地址为：<text class="a" id="address">{{info.address}}</text>，
+      联系人<text class="a">父亲</text>，联系电话<text class="a" style='text-decoration: underline'>
+        <text id="tel1">{{info.tel}}</text>
+      </text> 。
+    </view>
+    <h6 style="margin-top:7px;"><text>\n</text>本人已签署<text class="a"
+        style="font-size: 14px;text-decoration: underline;">承诺书</text>，承诺请假期间严格遵守国家法律法规和校规校纪相关规定，
+      不参加任何非法游行、集会活动，一切安全事故责任自负，按时返校销假，
+      请准假！
+    </h6>
+    <view>
+      <text class="emoji" id="name3">{{info.name}}</text>
+    </view>
+  </view>
+  <view class="yellow" style="left:10%;right: 5px;">申请续假</view>
+  <text>a </text>
+  <view class="yellow" style="left:10%;">申请销假</view>
+  <text>\n\n\n\n\n\n\n\n\n\n</text>
+</view>
+</view>

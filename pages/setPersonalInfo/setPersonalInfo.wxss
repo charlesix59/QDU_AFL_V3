@@ -1,0 +1,4 @@
+.pri-input{
+  margin: 0.5rem 2rem;
+  border:1px solid black;
+}

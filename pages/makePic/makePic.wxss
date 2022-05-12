@@ -1,0 +1,84 @@
+/* pages/makePic/makePic.wxss */
+h4 {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "微软雅黑", times, serif;
+  font-weight: normal;
+  margin-bottom: 0.15em;
+  padding-bottom: 0.15em;
+}
+
+main {
+  font-family: "微软雅黑";
+  text-indent: 32px;
+  font-size: 14px;
+}
+
+.a {
+  color: deepskyblue;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+h6 {
+  font-weight: normal;
+  text-indent: 24px;
+  font-size: 13px;
+  color: gray;
+  line-height: 1rem;
+}
+
+.top {
+  background-image: linear-gradient(to right, #56d0ff, #3584fa);
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  padding: 0.7em;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+.list {
+  width: 82%;
+  position: relative;
+  left: 10%;
+  background-color: white;
+  border-bottom: 1px #d6d6d6 solid;
+  /* border: 1px #d6d6d6 solid; */
+  padding: 0.8em;
+  line-height: 1.5em;
+  font-size: 0.8rem;
+}
+
+.gray {
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  color: #6d6d6d;
+}
+
+.yellow {
+  display: inline-block;
+  text-align: center;
+  background: #f7bd37;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.6em 2em;
+  border-radius: 3px;
+  position: relative;
+}
+
+.contain {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+.emoji{
+  font-family:'handwrite', serif;
+  padding-top: 10%;
+  font-size: 2rem;
+  margin-left: 70%;
+  margin-right: 0;
+}
