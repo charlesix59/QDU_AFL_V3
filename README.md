@@ -11,6 +11,18 @@ this is a wechat mini program for ask for leave in QDU by yourself
 
 从网页到mui到微信小程序这都第三版了，考虑要不要直接uniapp……（那我就快要成为真正的集结号了）
 
+### 早期版本
+
+V2版本：[校园集结号自主请假: 勾勾啊哈哈 (gitee.com)](https://gitee.com/charles-min/QDU_ASLv2)
+
+V1版本：[charlesix59/QDU_self_ASF_web (github.com)](https://github.com/charlesix59/QDU_self_ASF_web)
+
+### 一些废话
+
+> 沉默呵，沉默呵！不在沉默中爆发，就在沉默中灭亡——鲁迅
+
+> 哪里有压迫哪里就有反抗——毛泽东
+
 ## 使用方法
 
 1. 自己在微信开发者工具中编译构建运行，并生成测试版 
@@ -32,9 +44,9 @@ this is a wechat mini program for ask for leave in QDU by yourself
 
 - 当前版本：0.9.8 beta
 
-- [ ] 0.9.8b 能够使用的版本
-- [ ] 1.0.0 能够在键入信息界面显示上次键入的信息
-- [ ] 1.0.1 修改界面最下方两个按钮没有对齐的问题，修改部分显示bug
+- [x] 0.9.8b 能够使用的版本
+- [x] 1.0.0 能够在键入信息界面显示上次键入的信息
+- [x] 1.0.1 修改界面最下方两个按钮没有对齐的问题，修改部分显示bug
 - [ ] 1.1.0 为信息界面添加更多人性化的默认值
 - [ ] ……
 - [ ] 2.0.0 让整个界面类似原版校园集结号 

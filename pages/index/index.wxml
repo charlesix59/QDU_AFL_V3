@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <text>Hello World！</text>
+  <button class="btn" bindtap="openReadme">使用说明</button>
   <button class="btn" bindtap="openPersonalInfo">键入信息</button>
   <button class="btn" bindtap="openMakePic">生成假条</button>
 </view>

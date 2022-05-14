@@ -14,5 +14,10 @@ Page({
     wx.navigateTo({
       url: '../makePic/makePic',
     })
+  },
+  openReadme(){
+    wx.navigateTo({
+      url: '../readme/readme',
+    })
   }
 })

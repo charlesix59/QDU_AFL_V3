@@ -77,9 +77,11 @@
       <text class="emoji" id="name3">{{info.name}}</text>
     </view>
   </view>
-  <view class="yellow" style="left:10%;right: 5px;">申请续假</view>
-  <text>a </text>
-  <view class="yellow" style="left:10%;">申请销假</view>
+  <view style="text-align:center">
+    <view class="yellow" >申请续假</view>
+    <text style="color:white">aa </text>
+    <view class="yellow" >申请销假</view>
+  </view>
   <text>\n\n\n\n\n\n\n\n\n\n</text>
 </view>
 </view>
