@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/makePic/makePic",
     "pages/setPersonalInfo/setPersonalInfo",
-    "pages/readme/readme"
+    "pages/readme/readme",
+    "pages/license/license"
   ],
   "window": {
     "backgroundTextStyle": "light",

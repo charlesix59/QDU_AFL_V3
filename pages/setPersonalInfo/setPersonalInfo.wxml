@@ -3,7 +3,9 @@
 <view>
   <form bindsubmit="submit">
     <input type="text" class="pri-input" name="name" placeholder="姓名" value="{{info.name}}"/>
+    <input type="text" class="pri-input" name="number" placeholder="学号" value="{{info.number}}"/>
     <input type="text" class="pri-input" name="class" placeholder="班级" value="{{info.sclass}}"/>
+    <input type="text" class="pri-input" name="collage" placeholder="学院" value="{{info.collage}}"/>
     <input type="text" class="pri-input" name="tname" placeholder="辅导员姓名" value="{{info.tname}}"/>
     <input type="text" class="pri-input" name="tel" placeholder="手机号" value="{{info.tel}}"/>
     <input type="text" class="pri-input" name="address" placeholder="前往的地点" value="{{info.address}}"/>

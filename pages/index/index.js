@@ -19,5 +19,10 @@ Page({
     wx.navigateTo({
       url: '../readme/readme',
     })
+  },
+  openLicense(){
+    wx.navigateTo({
+      url: '../license/license',
+    })
   }
 })

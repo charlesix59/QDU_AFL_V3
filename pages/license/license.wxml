@@ -1,0 +1,59 @@
+<view class="background-con" bindtouchstart="myTouchStart" bindtouchmove="myTouchMove">
+  <text class="datatime-text">{{datetime}}</text>
+  <block wx:if="{{isPageOne}}">
+    <view class="license-con">
+      <view class="body-con">
+        <view class="img-con">
+          <image src="../../img/avtor.png" mode="widthFix"></image>
+        </view>
+        <view class="main">
+          <view style="  text-align: center;">
+            <text class="black-blod-md">{{info.name}}\n</text>
+            <text class="black-md">{{info.number}}\n</text>
+            <text class="black-blod-md">{{info.collage}}</text>
+            <text class="black-blod-md">{{info.sclass}}</text>
+            <text class="black-blod-md">{{info.dormitory}}</text>
+            <text>\n</text>
+            <button class="btn" style="width:10rem">
+              <text style="color:white;font-weight:500">展示二维码</text>
+            </button>
+            <text>\n</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="license-con">
+      <view class="head-con">
+        <text class="head-font">校外请假凭证</text>
+      </view>
+      <view class="body-con">
+        <view class="img-con">
+          <image src="../../img/avtor.png" mode="widthFix"></image>
+        </view>
+        <view class="main">
+          <view style="  text-align: center;">
+            <text class="black-blod-md">{{info.name}}\n</text>
+            <text class="black-md">{{info.number}}\n</text>
+          </view>
+          <view class="col-con" 
+          style="padding:1.5rem;display: flex;flex-flow: row nowrap;justify-content: flex-start;background-image: url(https://636c-cloud-learning-4gj0t42b077a1542-1311865279.tcb.qcloud.la/signature.png?sign=ea9312817eb31bb130e37bffb32e42ac&t=1662123276);background-position: center  center; background-repeat: no-repeat; background-size: cover;">
+            <view class="col-md">
+              <text class="black-md" space="nbsp">请假类型          \n</text>
+              <text class="black-blod-md">事假\n</text>
+              <text class="black-md">开始时间\n</text>
+              <text class="black-blod-md">{{info.beginTime}}\n</text>
+            </view>
+            <view class="col-md">
+              <text class="black-md">审批人\n</text>
+              <text class="black-blod-md">{{info.tname}}\n</text>
+              <text class="black-md">结束时间\n</text>
+              <text class="black-blod-md">{{info.endTime}}\n</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -90,6 +90,8 @@ Page({
     var info={};
     var days=this.data.days;
     info.name=e.detail.value.name;
+    info.number=e.detail.value.number;
+    info.collage=e.detail.value.collage;
     info.sclass=e.detail.value.class;
     info.tname=e.detail.value.tname;
     info.tel=e.detail.value.tel;
