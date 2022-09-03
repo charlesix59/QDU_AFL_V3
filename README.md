@@ -1,4 +1,5 @@
 # QDU_AFL_V3
+
 this is a wechat mini program for ask for leave in QDU by yourself
 
 ## please light the star, it's reall important for me.（请为我点个star，这对我真的很重要）
@@ -6,6 +7,17 @@ this is a wechat mini program for ask for leave in QDU by yourself
 ## keep silence 🤫
 
 ## 简介
+
+腾讯真的恶心，直接填个人信息无法过审，所以我就只能曲线救国了。
+
+信息代码的获取方法在操作指南中
+
+乞望见谅
+
+2022.9.3
+
+<hr>
+
 有些事说是小心也好，说是形式也罢。
 
 但是体现在个人身上，是痛苦与气愤。
@@ -15,6 +27,7 @@ this is a wechat mini program for ask for leave in QDU by yourself
 虽然大多是为了自己，如果下次又有魑魅魍魉在人间横行，我依然会用自己的方式祛魅。
 
 2022.9.2
+
 <hr>
 某大学终于打开了虚妄的门扉，推倒了染血的藩篱。这是一场胜利，或许是。
 
@@ -31,6 +44,7 @@ this is a wechat mini program for ask for leave in QDU by yourself
 今天，它退休了，但当黑暗再次笼罩之时，我仍将燃起炬火，予你微弱的光芒。
 
 5.26
+
 <hr>
 
 最近校园集结号迁移到微信小程序了，于是我又赶出来一个。
@@ -68,16 +82,38 @@ V1版本：[charlesix59/QDU_self_ASF_web (github.com)](https://github.com/charle
 
 - 不需要每次都键入信息，方便操作
 
+  注意事项：
+
+  1.信息键入每次会储存，如果你不重新填写，生成的假条与上次相同。如果信息没有变化则无需重复填写
+
+  2.键入信息的除时间以外的信息会默认与上次相同，如果不需要更改则只选择时间并提交即可
+
+  3.因为部分资源存放在云服务器中（免费的）所以加载速度会稍慢，请提前10秒钟以上生成需要的界面
+
+  4.对应的代码请到下列网站获取：
+
+    Ⅰ：在GitHub搜索QDU_AFL_V3
+
+    Ⅱ：进入charlesix59.github.io搜索小圆季节灏信息码获取
+
 ## 版本信息
 
 - 当前版本：1.1.2
 
 - [x] 0.9.8b 能够使用的版本
+
 - [x] 1.0.0 能够在键入信息界面显示上次键入的信息
+
 - [x] 1.0.1 修改界面最下方两个按钮没有对齐的问题，修改部分显示bug
+
 - [x] 1.1.0 为信息界面添加更多人性化的默认值
+
 - [x] 1.1.2 添加请假证明
+
+- [x] 1.1.3 将个人信息转为代码获取
+
 - [ ] ...more
+
 - [ ] 2.0.0 让整个界面类似原版校园集结号 
 
 ## 贡献方法

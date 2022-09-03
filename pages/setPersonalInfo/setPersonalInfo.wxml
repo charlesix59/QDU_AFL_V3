@@ -1,20 +1,14 @@
 <!--pages/setPersonalInfo/setPersonalInfo.wxml-->
-<text>pages/setPersonalInfo/setPersonalInfo.wxml</text>
+<text>请在此处粘贴身份代码以绑定身份，这种行为只需要进行一次</text>
 <view>
+  <text>姓名：{{info.name}}\n</text>
+  <text>学号：{{info.number}}\n</text>
+  <text>班级：{{info.sclass}}\n</text>
+  <text>学院：{{info.collage}}\n</text>
+  <text>导员：{{info.tname}}\n</text>
+  <text>电话：{{info.tel}}\n</text>
   <form bindsubmit="submit">
-    <input type="text" class="pri-input" name="name" placeholder="姓名" value="{{info.name}}"/>
-    <input type="text" class="pri-input" name="number" placeholder="学号" value="{{info.number}}"/>
-    <input type="text" class="pri-input" name="class" placeholder="班级" value="{{info.sclass}}"/>
-    <input type="text" class="pri-input" name="collage" placeholder="学院" value="{{info.collage}}"/>
-    <input type="text" class="pri-input" name="tname" placeholder="辅导员姓名" value="{{info.tname}}"/>
-    <input type="text" class="pri-input" name="tel" placeholder="手机号" value="{{info.tel}}"/>
-    <input type="text" class="pri-input" name="address" placeholder="前往的地点" value="{{info.address}}"/>
-    <picker class="pri-input" header-text="选择开始日期" mode="date" name="beginDate">{{dateInfo.beginDate}}</picker>
-    <picker class="pri-input" header-text="选择开始时间" mode="time" name="beginTime">{{dateInfo.beginTime}}</picker>
-    <picker class="pri-input" mode="selector" range="{{days}}" name="beginDay">{{dateInfo.beginDay}}</picker>
-    <picker class="pri-input" header-text="选择结束日期" mode="date" name="endDate">{{dateInfo.endDate}}</picker>
-    <picker class="pri-input" header-text="选择结束时间" mode="time" name="endTime">{{dateInfo.endTime}}</picker>
-    <picker class="pri-input" mode="selector" range="{{days}}" name="endDay">{{dateInfo.endDay}}</picker>
-    <button form-type="submit">提交</button>
+    <textarea placeholder="请在这里粘贴系统分发的代码" style="border:1px solid black" name="jsonStr" 	maxlength="1000"></textarea>
+    <button form-type="submit" style="border:1px solid black">提交</button>
   </form>
 </view>

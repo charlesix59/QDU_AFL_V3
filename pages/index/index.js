@@ -10,6 +10,11 @@ Page({
       url: '../setPersonalInfo/setPersonalInfo',
     })
   },
+  openSetDatetime(){
+    wx.navigateTo({
+      url: '../setDatetime/setDatetime',
+    })
+  },
   openMakePic(){
     wx.navigateTo({
       url: '../makePic/makePic',

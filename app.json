@@ -5,7 +5,8 @@
     "pages/makePic/makePic",
     "pages/setPersonalInfo/setPersonalInfo",
     "pages/readme/readme",
-    "pages/license/license"
+    "pages/license/license",
+    "pages/setDatetime/setDatetime"
   ],
   "window": {
     "backgroundTextStyle": "light",
