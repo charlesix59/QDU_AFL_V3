@@ -20,7 +20,9 @@ Page({
   },
   onLoad(){
     let info = wx.getStorageSync('info');
-    info.dormitory="浮山校区滢园11号楼4单元514";
+    info.beginDate=info.beginDate.substr(5);
+    info.endDate=info.endDate.substr(5);
+    console.log(info)
     this.setData({
       info:info
     })

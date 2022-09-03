@@ -43,13 +43,13 @@
               <text class="black-md" space="nbsp">请假类型          \n</text>
               <text class="black-blod-md">事假\n</text>
               <text class="black-md">开始时间\n</text>
-              <text class="black-blod-md">{{info.beginTime}}\n</text>
+              <text class="black-blod-md">{{info.beginDate}} {{info.beginTime}}\n</text>
             </view>
             <view class="col-md">
               <text class="black-md">审批人\n</text>
               <text class="black-blod-md">{{info.tname}}\n</text>
               <text class="black-md">结束时间\n</text>
-              <text class="black-blod-md">{{info.endTime}}\n</text>
+              <text class="black-blod-md">{{info.endDate}} {{info.endTime}}\n</text>
             </view>
           </view>
         </view>

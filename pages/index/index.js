@@ -5,6 +5,24 @@ const app = getApp()
 Page({
   data: {
   },
+  onLoad(){
+    const updateManager=wx.getUpdateManager();
+    updateManager.onCheckForUpdate(function(res){
+      console.log(res.hasUpdate)
+    })
+    updateManager.onUpdateReady(function(){
+      wx.showModal({
+        content: '新版本已准备好，是否重启应用？',
+        showCancel: true,
+        title: '版本更新',
+        success: (result) => {
+          if(result.confirm){
+            updateManager.applyUpdate();
+          }
+        },
+      })
+    })
+  },
   openPersonalInfo(){
     wx.navigateTo({
       url: '../setPersonalInfo/setPersonalInfo',

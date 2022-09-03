@@ -7,6 +7,8 @@
   <text>学院：{{info.collage}}\n</text>
   <text>导员：{{info.tname}}\n</text>
   <text>电话：{{info.tel}}\n</text>
+  <text>前往：{{info.address}}\n</text>
+  <text>住处：{{info.dormitory}}\n</text>
   <form bindsubmit="submit">
     <textarea placeholder="请在这里粘贴系统分发的代码" style="border:1px solid black" name="jsonStr" 	maxlength="1000"></textarea>
     <button form-type="submit" style="border:1px solid black">提交</button>

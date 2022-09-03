@@ -96,12 +96,14 @@ V1版本：[charlesix59/QDU_self_ASF_web (github.com)](https://github.com/charle
 
 ```json
 {
-    "name":"王佳然",
-    "number":"2020114514",
-    "sclass":"汉语言文学01",
-    "collage":"文学与新闻传播学院",
-    "tname":"张芸",
-    "tel":"13845926573"
+    "name":"你的名字",
+    "number":"你的学号",
+    "sclass":"你的班级",
+    "collage":"你的学院",
+    "tname":"你导员的大号",
+    "tel":"你的电话",
+    "address":"你要去的地方",
+    "dormitory":"你的住处"
 }
 ```
 
@@ -122,6 +124,18 @@ V1版本：[charlesix59/QDU_self_ASF_web (github.com)](https://github.com/charle
 - [x] 1.1.2 添加请假证明
 
 - [x] 1.1.3 将个人信息转为代码获取
+
+- [x] 1.1.4 修改tagbar的名字
+
+- [x] 1.1.5 修改只有时间没有日期的bug
+
+- [x] 1.1.6 浮山公寓不能改的bug
+
+- [x] 1.1.7 请假前往的地点消失的bug
+
+- [ ] 1.1.8 添加默认日期为当前日期开始，明日结束
+
+- [ ] 1.1.9 动画的优化
 
 - [ ] ...more
 
