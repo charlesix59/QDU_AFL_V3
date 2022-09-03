@@ -3,10 +3,14 @@
   <form bindsubmit="submit">
     <picker class="pri-input" header-text="选择开始日期" mode="date" name="beginDate">{{dateInfo.beginDate}}</picker>
     <picker class="pri-input" header-text="选择开始时间" mode="time" name="beginTime">{{dateInfo.beginTime}}</picker>
-    <picker class="pri-input" mode="selector" range="{{days}}" name="beginDay">{{dateInfo.beginDay}}</picker>
     <picker class="pri-input" header-text="选择结束日期" mode="date" name="endDate">{{dateInfo.endDate}}</picker>
     <picker class="pri-input" header-text="选择结束时间" mode="time" name="endTime">{{dateInfo.endTime}}</picker>
-    <picker class="pri-input" mode="selector" range="{{days}}" name="endDay">{{dateInfo.endDay}}</picker>
     <button form-type="submit">提交</button>
   </form>
+  <text>\n</text>
+  <button bindtap="setDefaultDatetime">默认日期</button>
+  <text>
+    *优化了算法，不需要再输入星期
+    *默认日期为当前日期 8 点 到 22 点
+  </text>
 </view>

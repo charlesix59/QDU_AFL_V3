@@ -1,3 +1,5 @@
+const util = require('../../utils/util.js'); 
+
 Page({
 
   /**
@@ -5,13 +7,13 @@ Page({
    */
   data: {
     days:[
+      "周日",
       "周一",
       "周二",
       "周三",
       "周四",
       "周五",
-      "周六",
-      "周日"
+      "周六"
     ],
     info:{
     },
@@ -34,20 +36,40 @@ Page({
         info:wx.getStorageSync('info')
       })
     }
-    console.log(this.data.info);
+    // console.log(this.data.info);
   },
 
   submit(e){
     var info=wx.getStorageSync('info');
     var days=this.data.days;
-    info.address=e.detail.value.address;
+    //日期设置
     info.beginDate=e.detail.value.beginDate;
     info.beginTime=e.detail.value.beginTime;
-    info.beginDay=days[e.detail.value.beginDay];
+    let beginDatetime=new Date(info.beginDate);
+    info.beginDay=days[beginDatetime.getDay()];
     info.endDate=e.detail.value.endDate;
     info.endTime=e.detail.value.endTime;
-    info.endDay=days[e.detail.value.endDay];
+    let endDatetime=new Date(info.endDate);
+    info.endDay=days[endDatetime.getDay()];
+    //信息储存
     console.log(info);
+    wx.setStorageSync('info', info);
+    this.setData({
+      dateInfo:info
+    });
+    wx.showModal({
+      cancelColor: 'cancelColor',
+      title:'提交成功',
+    })
+  },
+  setDefaultDatetime(){
+    let today = new Date();
+    let info = wx.getStorageSync('info');
+    let days=this.data.days;
+    info.beginDate = info.endDate = util.formateDate(today);
+    info.beginDay = info.endDay = days[today.getDay()];
+    info.beginTime = "08:00";
+    info.endTime = "22:00";
     wx.setStorageSync('info', info);
     this.setData({
       dateInfo:info
