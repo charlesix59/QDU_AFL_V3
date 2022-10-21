@@ -12,6 +12,8 @@ this is a wechat mini program for ask for leave in QDU by yourself
 
 如果有任何问题请在issue跟我联系
 
+2022.10.21
+
 <hr>
 
 腾讯真的恶心，直接填个人信息无法过审，所以我就只能曲线救国了。
