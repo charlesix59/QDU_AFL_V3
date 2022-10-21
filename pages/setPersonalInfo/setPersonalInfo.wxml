@@ -1,14 +1,14 @@
 <!--pages/setPersonalInfo/setPersonalInfo.wxml-->
 <text>请在此处粘贴身份代码以绑定身份，这种行为只需要进行一次</text>
 <view>
-  <text>姓名：{{info.name}}\n</text>
-  <text>学号：{{info.number}}\n</text>
-  <text>班级：{{info.sclass}}\n</text>
-  <text>学院：{{info.collage}}\n</text>
-  <text>导员：{{info.tname}}\n</text>
-  <text>电话：{{info.tel}}\n</text>
-  <text>前往：{{info.address}}\n</text>
-  <text>住处：{{info.dormitory}}\n</text>
+  <text>{{info.name}}\n</text>
+  <text>{{info.number}}\n</text>
+  <text>{{info.sclass}}\n</text>
+  <text>{{info.collage}}\n</text>
+  <text>{{info.tname}}\n</text>
+  <text>{{info.tel}}\n</text>
+  <text>{{info.address}}\n</text>
+  <text>{{info.dormitory}}\n</text>
   <form bindsubmit="submit">
     <textarea placeholder="请在这里粘贴系统分发的代码" style="border:1px solid black" name="jsonStr" 	maxlength="1000"></textarea>
     <button form-type="submit" style="border:1px solid black">提交</button>

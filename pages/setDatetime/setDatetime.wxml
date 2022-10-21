@@ -1,10 +1,10 @@
 <!--pages/setDatetime/setDatetime.wxml-->
 <view>
   <form bindsubmit="submit">
-    <picker class="pri-input" header-text="选择开始日期" mode="date" name="beginDate">{{dateInfo.beginDate}}</picker>
-    <picker class="pri-input" header-text="选择开始时间" mode="time" name="beginTime">{{dateInfo.beginTime}}</picker>
-    <picker class="pri-input" header-text="选择结束日期" mode="date" name="endDate">{{dateInfo.endDate}}</picker>
-    <picker class="pri-input" header-text="选择结束时间" mode="time" name="endTime">{{dateInfo.endTime}}</picker>
+    <picker class="pri-input" header-text="选择开始日期" mode="date" name="beginDate" bindchange="changeInfo" id="beginDate">{{dateInfo.beginDate}}</picker>
+    <picker class="pri-input" header-text="选择开始时间" mode="time" name="beginTime" bindchange="changeInfo" id="beginTime">{{dateInfo.beginTime}}</picker>
+    <picker class="pri-input" header-text="选择结束日期" mode="date" name="endDate" bindchange="changeInfo" id="endDate">{{dateInfo.endDate}}</picker>
+    <picker class="pri-input" header-text="选择结束时间" mode="time" name="endTime" bindchange="changeInfo" id="endTime">{{dateInfo.endTime}}</picker>
     <button form-type="submit">提交</button>
   </form>
   <text>\n</text>

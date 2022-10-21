@@ -38,7 +38,7 @@
             <text class="black-md">{{info.number}}\n</text>
           </view>
           <view class="col-con" 
-          style="padding:1.5rem;display: flex;flex-flow: row nowrap;justify-content: flex-start;background-image: url(https://636c-cloud-learning-4gj0t42b077a1542-1311865279.tcb.qcloud.la/signature.png?sign=ea9312817eb31bb130e37bffb32e42ac&t=1662123276);background-position: center  center; background-repeat: no-repeat; background-size: cover;">
+          style="padding:1.5rem;display: flex;flex-flow: row nowrap;justify-content: flex-start;background-image: url(https://www.charlespro.xyz/static/img/signature.png);background-position: center  center; background-repeat: no-repeat; background-size: cover;">
             <view class="col-md">
               <text class="black-md" space="nbsp">请假类型          \n</text>
               <text class="black-blod-md">事假\n</text>

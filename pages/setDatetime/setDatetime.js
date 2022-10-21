@@ -78,5 +78,14 @@ Page({
       cancelColor: 'cancelColor',
       title:'提交成功',
     })
+  },
+  changeInfo(e){
+    // console.log(e);
+    const mkey = 'dateInfo.'+e.target.id;
+    const mvalue = e.detail.value;
+    this.setData({
+      [mkey]:mvalue
+    })
+    console.log(this.data)
   }
 })

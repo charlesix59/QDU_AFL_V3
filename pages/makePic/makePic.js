@@ -17,7 +17,8 @@ Page({
     })
     wx.loadFontFace({
       family: 'handwrite',
-      source: 'https://636c-cloud-learning-4gj0t42b077a1542-1311865279.tcb.qcloud.la/handwrite.ttf?sign=00162f81d951257bd36544c5345487b3&t=1652280764',
+      // source: 'https://636c-cloud-learning-4gj0t42b077a1542-1311865279.tcb.qcloud.la/handwrite.ttf?sign=00162f81d951257bd36544c5345487b3&t=1652280764',
+      source: 'https://www.charlespro.xyz/static/resource/handwrite.ttf',
       success:(res)=>{
         console.log("success");
       },

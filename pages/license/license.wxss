@@ -15,6 +15,7 @@
   width: 92%;
   border-radius: 5px;
   background-color: white;
+  height: 75%;
 }
 .head-con{
   border-radius: 5px 5px 0px 0px;
